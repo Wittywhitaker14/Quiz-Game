@@ -19,6 +19,12 @@ body p {
     font-size: 16.5px;
 }
 
+body h2 {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
 header {
     width: 100%;
     height: 50px;
@@ -30,18 +36,18 @@ header {
 
 header h1 {
     font-weight: normal;
-    color: blue;
-    font-size: 30px;
+    color: white;
+    font-size: 18px;
     margin: 0;
 }
 
 header a {
     text-decoration: none;
-    color: blue;
+    color: white;
 }
 
 .high-score:hover {
-    text-decoration: underline black;
+    text-decoration: underline 2px black;
 }
 
 .container {
@@ -49,8 +55,12 @@ header a {
     max-width: 85%;
     border: 2px solid black;
     box-shadow: 0 0 5px 1px;
-    padding: 10px;
+    padding: 20px;
     background-color: white;
+}
+
+.question-section {
+    font-size: 20px;
 }
 
 .btn-grid {

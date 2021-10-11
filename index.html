@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-    <title>Quiz Game</title>
+    <title>Coding Quiz</title>
 </head>
 <body>
     <header>
         <h1>
             <a class="high-score" href="#viewHighScores">View High Scores</a>
         </h1>
+      <h1 id="countdown"></h1>
     </header>
     <div class = "container">
         <div id="question-container" class = "hide">
-            <div id="question">Question</div>
+            <div id="question" class="question-section">Question</div>
             <div id="answer-btns" class="btn-grid">
                 <button class="btn">Answer 1</button>
                 <button class="btn">Answer 2</button>
@@ -25,9 +26,11 @@
             </div>
         </div>
         <div class="control-btns">
-            <h1>Coding Quiz</h1>
-            <div>
-                <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score and time by ten seconds!</p>
+            <div id="quiz" class="hide">
+                <h2>Coding Quiz</h2>
+                <div>
+                    <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score and time by ten seconds!</p>
+                </div>
             </div>
             <button id="start-btn" class="start btn">Start</button>
             <button id="next-btn" class="next btn">Next</button>
