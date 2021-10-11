@@ -22,14 +22,15 @@ THEN I can save my initials and score
 
 ## Mock Up
 
-
+![mockUpScreenshot](https://wittywhitaker14.github.io/Quiz-Game/#viewHighScores)
 
 ## URLs
 
 
 The URL of the deployed application.
 
-
+https://wittywhitaker14.github.io/Quiz-Game/#viewHighScores
 
 The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 
+https://github.com/Wittywhitaker14/Quiz-Game
