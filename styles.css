@@ -1,0 +1,106 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(94, 94, 94);
+}
+
+body p {
+    font-size: 22px;
+}
+
+body h2 {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-weight: normal;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.high-score:hover {
+    text-decoration: underline 2px black;
+}
+
+.container {
+    width: 900px;
+    max-width: 85%;
+    border: 2px solid black;
+    box-shadow: 0 0 5px 1px;
+    padding: 20px;
+    background-color: white;
+}
+
+.question-section {
+    font-size: 30px;
+    padding: 0 20px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    margin: 20px;
+}
+
+.btn {
+    padding: 10px 15px; 
+    background-color: rgb(100, 0, 100);
+    color: white;
+    border: solid 1px black;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    opacity: 60%;
+}
+
+
+.control-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.start .next {
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.hide {
+    display: none;
+}
