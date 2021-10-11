@@ -16,7 +16,7 @@ body {
 }
 
 body p {
-    font-size: 16.5px;
+    font-size: 22px;
 }
 
 body h2 {
@@ -60,7 +60,8 @@ header a {
 }
 
 .question-section {
-    font-size: 20px;
+    font-size: 30px;
+    padding: 0 20px;
 }
 
 .btn-grid {
@@ -71,24 +72,18 @@ header a {
 }
 
 .btn {
-    padding: 5px 10px; 
+    padding: 10px 15px; 
     background-color: rgb(100, 0, 100);
     color: white;
     border: solid 1px black;
     border-radius: 5px;
+    font-size: 1.5rem;
 }
 
 .btn:hover {
     opacity: 60%;
 }
 
-.start .next {
-    padding: 5px;
-    margin: 10px;
-    display: flex;
-    font-weight: bold;
-    padding: 5px;
-}
 
 .control-btns {
     display: flex;
@@ -96,6 +91,14 @@ header a {
     justify-content: center;
     align-items: center;
     margin: 10px;
+}
+
+.start .next {
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    font-weight: bold;
+    padding: 20px;
 }
 
 .hide {
