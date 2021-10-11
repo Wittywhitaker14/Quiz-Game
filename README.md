@@ -22,7 +22,7 @@ THEN I can save my initials and score
 
 ## Mock Up
 
-![mockUpScreenshot](https://wittywhitaker14.github.io/Quiz-Game/#viewHighScores)
+![mockUpScreenshot](https://wittywhitaker14.github.io/Quiz-Game/)
 
 ## URLs
 
