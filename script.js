@@ -9,6 +9,10 @@ var questionEl = document.getElementById('question')
 var answerEl = document.getElementById('answer-btns')
 
 startBtn.addEventListener('click', startQuiz)
+nextBtn.addEventListener('click', () => {
+    currentQuestion++
+    nextQuestion()
+})
 
 // The Functions
 
@@ -67,19 +71,111 @@ function reset() {
     }
 }
 
-function answer () {
+function answer (e) {
+    var selectedBtn = e.tartget
+    var correct = selectedBtn.dataset.correct
+    statusClass(document.body, correct)
+    Array.from(answerEl.children).forEach(button => {
+        statusClass(button, button.dataset.correct)
+    })
+    if(shuffleQuestions.length > currentQuestion + 1) {
+    nextBtn.classList.remove('hide')
+    } else {''
+        
+    }
 }
 
 // The Questions
 
 var questions = [
     {
-        question: 'Arrays in javascript could be used to store...',
+        question: '1: Arrays in javascript could be used to store...',
         answer: [
             {text: 'Numbers and Strings', correct: false},
             {text: 'Booleans', correct: false},
             {text: 'Other Arrays', correct: false},
             {text: 'All the Above', correct: true} 
         ]
-    }
+    },
+    {
+        question: '2: Arrays in javascript could be used to store...',
+        answer: [
+            {text: 'Numbers and Strings', correct: false},
+            {text: 'Booleans', correct: false},
+            {text: 'Other Arrays', correct: false},
+            {text: 'All the Above', correct: true} 
+        ]
+    },
+    {
+        question: '3: Arrays in javascript could be used to store...',
+        answer: [
+            {text: 'Numbers and Strings', correct: false},
+            {text: 'Booleans', correct: false},
+            {text: 'Other Arrays', correct: false},
+            {text: 'All the Above', correct: true} 
+        ]
+    },
+    {
+        question: '4: Arrays in javascript could be used to store...',
+        answer: [
+            {text: 'Numbers and Strings', correct: false},
+            {text: 'Booleans', correct: false},
+            {text: 'Other Arrays', correct: false},
+            {text: 'All the Above', correct: true} 
+        ]
+    },
+    {
+        question: '5: Arrays in javascript could be used to store...',
+        answer: [
+            {text: 'Numbers and Strings', correct: false},
+            {text: 'Booleans', correct: false},
+            {text: 'Other Arrays', correct: false},
+            {text: 'All the Above', correct: true} 
+        ]
+    },
+    {
+        question: '6: Arrays in javascript could be used to store...',
+        answer: [
+            {text: 'Numbers and Strings', correct: false},
+            {text: 'Booleans', correct: false},
+            {text: 'Other Arrays', correct: false},
+            {text: 'All the Above', correct: true} 
+        ]
+    },
+    {
+        question: '7: Arrays in javascript could be used to store...',
+        answer: [
+            {text: 'Numbers and Strings', correct: false},
+            {text: 'Booleans', correct: false},
+            {text: 'Other Arrays', correct: false},
+            {text: 'All the Above', correct: true} 
+        ]
+    },
+    {
+        question: '8: Arrays in javascript could be used to store...',
+        answer: [
+            {text: 'Numbers and Strings', correct: false},
+            {text: 'Booleans', correct: false},
+            {text: 'Other Arrays', correct: false},
+            {text: 'All the Above', correct: true} 
+        ]
+    },
+    {
+        question: '9: Arrays in javascript could be used to store...',
+        answer: [
+            {text: 'Numbers and Strings', correct: false},
+            {text: 'Booleans', correct: false},
+            {text: 'Other Arrays', correct: false},
+            {text: 'All the Above', correct: true} 
+        ]
+    },
+    {
+        question: '10: Arrays in javascript could be used to store...',
+        answer: [
+            {text: 'Numbers and Strings', correct: false},
+            {text: 'Booleans', correct: false},
+            {text: 'Other Arrays', correct: false},
+            {text: 'All the Above', correct: true} 
+        ]
+    },
 ]
